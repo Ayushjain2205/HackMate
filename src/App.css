@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.pro-sidebar {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activeClicked div {
+  background-color: rgb(255, 0, 242);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a202c !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 70vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
+}
+
+.page-title {
+  color: rgb(255, 0, 242);
+}
+
+.tile {
+  height: 164px;
+  background-color: black;
+  padding: 15px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.tile:hover .details {
+  color: rgb(255, 0, 242);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tile:hover .tile-image {
+  transform: scale(1.1);
+}
+
+.tile a,
+.tile a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tile-image {
+  height: 135px;
+  width: 240px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
+  vertical-align: middle;
+}
+
+.image-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.details {
+  color: #fff;
+  margin-left: 45px;
+  width: 50%;
 }
