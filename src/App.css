@@ -70,3 +70,13 @@ body {
   margin-left: 45px;
   width: 50%;
 }
+
+.intro {
+  text-align: center;
+  color: #fff;
+}
+
+.hack-image {
+  height: 80vh;
+  width: 70vw;
+}

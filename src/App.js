@@ -8,6 +8,7 @@ import Frameworks from "./pages/frameworks";
 import Analytics from "./pages/analytics";
 import Colors from "./pages/colors";
 import Assets from "./pages/assets";
+import Home from "./pages/home";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/analytics' render={(props) => <Analytics />} />
           <Route exact path='/colors' render={(props) => <Colors />} />
           <Route exact path='/assets' render={(props) => <Assets />} />
+          <Route exact path='/' render={(props) => <Home />} />
         </Switch>
       </div>
     </Router>
